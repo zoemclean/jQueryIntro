@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .red{
     background-color: #e74c3c;
 }
@@ -49,4 +53,103 @@
 .box {
     width: 150px;
     height: 150px;
+}
+
+body {
+    margin-bottom: 1000px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.modalContent {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    padding: 20px;
+}
+
+.noScroll {
+    overflow-y: hidden;
+}
+
+
+/* NAV */
+.listStyle {
+    list-style: none;
+    flex-direction: row;
+}
+
+/* EXAMPLE */
+.navBar{
+    padding: 10px;
+    background-color: #95a5a6;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navList{
+    list-style: none;
+    display: none;
+}
+
+.listItem{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hamburgerIcon{
+    font-size: 2em;
+    align-self: flex-end;
+}
+
+@media screen and (min-width:800px){
+
+    .hamburgerIcon{
+        display: none;
+    }
+
+    .navBar{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+
+    .navList{
+        display: block !important;
+    }
+
+    .listItem{
+        float: left;
+        padding: 0 20px;
+    }
+
+    .navList::after{
+        clear: both;
+        content: '';
+        display: block;
+    }
 }

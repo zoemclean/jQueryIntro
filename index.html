@@ -5,14 +5,44 @@
         <title>jQuery Intro</title>
 
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+
+        <!-- <nav>
+            <ul class="listStyle">
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+        </nav> -->
+
+        <!-- EXAMPLE -->
+        <nav class="navBar">
+            <span id="navListToggleButton" class="hamburgerIcon">&#x2630;</span>
+
+            <ul id="navList" class="navList">
+                <li class="listItem">Link 1</li>
+                <li class="listItem">Link 2</li>
+                <li class="listItem">Link 3</li>
+            </ul>
+        </nav>
+        <!-- END OF EXAMPLE -->
 
         <div id="redBox" class="box red"></div>
         <div id="blueBox" class="box blue"></div>
         <div id="greenBox" class="box green"></div>
 
 
+
+        <button type="button" name="button" id="modalExample1Button">Toggle Popup</button>
+
+        <div id="modalExample1" class="modal hidden">
+            <div class="modalContent">
+                <h3>Modal Title</h3>
+                <h3 id="modalExample1Close">&#10005;</h3>
+            </div>
+        </div>
 
 
 
